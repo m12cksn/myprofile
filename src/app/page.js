@@ -5,7 +5,7 @@ import Whatsapp from "@/components/Whatsapp";
 
 export default function Home() {
   return (
-    <div className="bg-third md:h-screen lg:h-auto">
+    <div className="bg-third  ">
       <Hero />
       <Whatsapp />
     </div>

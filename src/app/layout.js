@@ -12,8 +12,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={oswald.className}>
-        <main>
+      <body className={`${oswald.className} bg-third`}>
+        <main className="">
           <Navbar />
           {children}
         </main>
