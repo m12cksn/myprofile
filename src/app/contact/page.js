@@ -1,6 +1,7 @@
 import React from "react";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { AiFillCustomerService, AiTwotoneMail } from "react-icons/ai";
+import Footer from "@/components/Footer";
 
 const page = () => {
   const contacts = [
@@ -22,7 +23,7 @@ const page = () => {
   ];
   return (
     <div className="bg-slate-200 md:pt-28">
-      <div className="lg:flex md:max-w-4xl mx-auto px-5">
+      <div className="lg:flex md:max-w-4xl mx-auto px-5 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl">
         <div className="basis-2/3 flex justify-center  p-3 ">
           <form action="" className=" w-full pt-8 pb-10 px-5 bg-white">
             <h1 className="text-xl lg:text-2xl xl:text-3xl text-slate-900 md:text-3xl">
@@ -105,6 +106,7 @@ const page = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

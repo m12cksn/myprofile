@@ -14,7 +14,7 @@ export default function Hero() {
     <>
       <div className="md:hidden pt-5 sm:pt-7 px-5 sm:max-w-xl sm:container mx-auto  max-w-md grid place-content-center">
         <About />
-        <Service />
+        {/* <Service /> */}
         <Work />
         <Blog />
         <Contact />
@@ -25,17 +25,17 @@ export default function Hero() {
         <div className="md:row-span-2 lg:row-span-2 lg:col-span-2">
           <About />
         </div>
-        <div className="lg:col-span-2 ">
+        {/* <div className="lg:col-span-2 ">
           <Service />
-        </div>
-        <div className="lg:col-span-2">
-          <Blog />
-        </div>
-        <div className="lg:col-span-3">
+        </div> */}
+        <div className="lg:col-span-4">
           <Work />
         </div>
-        <div className=" ">
+        <div className="lg:col-span-2 ">
           <Contact />
+        </div>
+        <div className=" lg:col-span-2  md:col-span-2">
+          <Blog />
         </div>
         <div className="lg:col-span-6 md:col-span-2">
           <Footer />

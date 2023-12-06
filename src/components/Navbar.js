@@ -19,12 +19,8 @@ const Navbar = () => {
       title: "Blog",
     },
     {
-      link: "/services",
-      title: "Services",
-    },
-    {
       link: "/work",
-      title: "Work",
+      title: "Portfolio",
     },
     {
       link: "/contact",
