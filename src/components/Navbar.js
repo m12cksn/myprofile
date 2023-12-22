@@ -33,7 +33,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" 2xl:max-w-7xl md:max-w-4xl lg:max-w-6xl shadow md:shadow-none  md:-translate-x-1/2 md:left-1/2 md:fixed top-5 md:px-8 md:rounded-lg z-40 w-full">
+    <div className=" 2xl:max-w-7xl md:max-w-4xl lg:max-w-6xl shadow md:shadow-none  md:-translate-x-1/2 md:left-1/2 md:fixed top-5 md:px-5 md:rounded-lg z-40 w-full">
       <header className="md:rounded-lg  top-5 bg-yellow-200 shadow-md w-full ease-in-out duration-500  z-50">
         <nav className="max-w-[1366px]  md:rounded-lg container flex justify-between items-center py-5 md:py-6 lg:py-6 px-4 md:px-8 lg:px-10">
           <Link href="/" className="flex items-center gap-2">
