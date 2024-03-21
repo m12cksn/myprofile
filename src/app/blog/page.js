@@ -29,13 +29,13 @@ const page = () => {
 
   return (
     <div className="p-5 bg-third">
-      <div className="">
+      <div className="pt-24">
         <h1 className=" border-b-2 border-slate-800 text-slate-900 text-2xl pb-1">
           My Blog
         </h1>
 
         {/* CARD 1  */}
-        <div>
+        {/* <div>
           {blogs.map((blog, index) => (
             <div
               key={index}
@@ -66,7 +66,7 @@ const page = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
       <Footer />
     </div>

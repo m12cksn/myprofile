@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { FaCircle } from "react-icons/fa";
+import Link from "next/link";
 
 const Contact = () => {
   return (
@@ -23,7 +24,7 @@ const Contact = () => {
     //   />
     //   <h1 className="p-5 text-xl text-textBase">CONTACT</h1>
     // </div>
-    <div className="h-auto">
+    <Link href="/contact" className="h-auto">
       <div className="bg-textDark shadow-md md:max-w-md max-w-sm sm:max-w-lg rounded-md overflow-hidden group mt-8 md:mt-0 hover:border-[1px] hover:border-pink-300 hover:scale-95 transition-all duration-500 ease-in-out">
         <div className="p-5">
           <h1 className=" text-textBase bg-pink-100 border-[1px] border-pink-400 w-20 rounded shadow text-center flex items-center justify-center gap-1">
@@ -43,7 +44,7 @@ const Contact = () => {
         />
         <h1 className="p-5 text-xl text-textBase">CONTACT</h1>
       </div>
-    </div>
+    </Link>
   );
 };
 
