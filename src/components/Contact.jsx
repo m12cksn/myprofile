@@ -1,9 +1,10 @@
 import React from "react";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { AiFillCustomerService, AiTwotoneMail } from "react-icons/ai";
+import { MdOutlineEmail } from "react-icons/md";
 import Footer from "@/components/Footer";
 
-const page = () => {
+const Contact = () => {
   const contacts = [
     {
       icons: AiFillCustomerService,
@@ -11,7 +12,7 @@ const page = () => {
       desc: "You can contact us anytime at +62857-2632-1786 whenever you need assistance",
     },
     {
-      icons: AiTwotoneMail,
+      icons: MdOutlineEmail,
       title: "Email",
       desc: "You can also send an email to imiwaniwset@gmail.com. We will respond to your email as soon as possible.",
     },
@@ -22,9 +23,9 @@ const page = () => {
     },
   ];
   return (
-    <div className="bg-slate-200 md:pt-28">
-      <div className="lg:flex md:max-w-4xl mx-auto px-5 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl">
-        <div className="basis-2/3 flex justify-center  p-3 ">
+    <div className="bg-white py-5 md:pt-28">
+      <div className="lg:flex md:max-w-4xl mx-auto  lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl">
+        <div className="basis-2/3 flex justify-center   ">
           <form action="" className=" w-full pt-8 pb-10 px-5 bg-white">
             <h1 className="text-xl lg:text-2xl xl:text-3xl text-slate-900 md:text-3xl">
               Get in Touch ...
@@ -93,13 +94,13 @@ const page = () => {
           {contacts.map((contact, index) => (
             <div
               key={index}
-              className="bg-white mx-auto mb-5 py-3 px-8 sm:max-w-4xl sm:px-12 sm:py-7"
+              className="bg-sky-500 mx-auto mb-5 py-3 px-8 sm:max-w-4xl sm:px-12 sm:py-7"
             >
-              <contact.icons className="text-primary xl:text-9xl lg:text-8xl text-8xl text-center md:text-9xl w-full" />
-              <h1 className="text-2xl text-center lg:text-2xl xl:text-3xl mt-3 text-slate-900 md:text-4xl">
+              <contact.icons className="text-white xl:text-9xl lg:text-8xl text-8xl text-center md:text-9xl w-full" />
+              <h1 className="text-2xl text-center lg:text-2xl xl:text-3xl mt-3 text-slate-100 md:text-4xl">
                 {contact.title}
               </h1>
-              <p className="text-center text-lg md:text-2xl md:mt-3 md:leading-relaxed text-slate-700 mt-1 tracking-wide leading-normal lg:text-base xl:text-xl ">
+              <p className="text-center text-lg md:text-2xl md:mt-3 md:leading-relaxed text-slate-200 mt-1 tracking-wide leading-normal lg:text-base xl:text-xl ">
                 {contact.desc}
               </p>
             </div>
@@ -111,4 +112,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Contact;

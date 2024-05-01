@@ -1,4 +1,5 @@
 import React from "react";
+
 import Image from "next/image";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -12,7 +13,7 @@ import { SiMongodb } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { GiSupersonicArrow } from "react-icons/gi";
 
-const page = () => {
+const AboutMe = () => {
   const icons = [
     {
       icon: SiTailwindcss,
@@ -37,11 +38,11 @@ const page = () => {
     },
   ];
   return (
-    <div className="bg-slate-100 lg:pt-32 ">
-      <div className=" mx-auto max-w-md sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl">
+    <div className="bg-slate-50 lg:pt-32 ">
+      <div className=" mx-auto max-w-md sm:max-w-2xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-full">
         <div className="px-5 md:px-14 ">
-          <div className=" mx-auto pt-5">
-            <div className="lg:flex items-center xl:py-10 lg:gap-3 xl:gap-8 ">
+          <div className=" mx-auto pt-5  2xl:max-w-7xl">
+            <div className="lg:flex items-center  xl:py-10 lg:gap-3 xl:gap-8 ">
               <div className="w-full">
                 <h1 className="text-9xl xl:mb-5 tracking-normal max-w-sm sm:max-w-2xl md:max-w-4xl sm:text-[16rem] md:text-[22rem] md:text-center  mx-auto text-slate-600 lg:text-8xl xl:text-9xl lg:text-left">
                   <span className="md:text-[18rem] lg:text-8xl xl:text-9xl ">
@@ -49,19 +50,13 @@ const page = () => {
                   </span>{" "}
                   iwan
                 </h1>
-                <p className="tracking-wide xl:mb-5 pt-5 text-slate-500 sm:text-xl font-light xl:text-2xl lg:leading-snug">
-                  hi, I'm Iwan Setiawan,{" "}
-                  <span className="text-third font-semibold">
-                    Web Developer and Digital Educator based in Cilacap -
-                    Central of Java
-                  </span>
-                </p>
+
                 <p className="pt-5 text-slate-800 font-light text-3xl  tracking-wide leading-snug md:text-6xl lg:text-4xl    lg:tracking-wider lg:leading-snug md:leading-normal">
                   If you wanna stand out, gotta be outstanding
                 </p>
               </div>
               <div className="flex justify-center  top-5 right-5 lg:mt-0 mt-7">
-                <div className=" bg-gradient-to-t from-cyan-400 to-blue-400  max-w-sm sm:max-w-2xl md:w-full lg:max-w-md  overflow-hidden hover:border-4 hover:border-yellow-300 relative lg:aspect-[3/4]  group rounded-b-[7rem] lg:rounded-b-none lg:rounded-bl-[7rem] rounded-tr-[7rem] shadow-md  ">
+                <div className=" bg-gradient-to-t from-cyan-400 to-sky-500  max-w-sm sm:max-w-2xl md:w-full lg:max-w-md xl:max-w-xl  overflow-hidden hover:border-4 hover:border-yellow-300 relative lg:aspect-[3/4]  group rounded-b-[7rem] lg:rounded-b-none lg:rounded-bl-[7rem] rounded-tr-[7rem] shadow-md  ">
                   <Image
                     className="w-full h-full group-hover:scale-110 transition-all duration-500 drop-shadow-xl object-cover  bg-cover bg-center"
                     src={"/img/hero.png"}
@@ -91,8 +86,8 @@ const page = () => {
             </p>
           </div>
         </div>
-        <div className="my-10 py-5 bg-white mx-auto">
-          <h1 className="text-center mb-10 lg:underline lg:text-3xl text-slate-800 text-2xl sm:text-3xl">
+        <div className="my-10 py-5 bg-sky-500 mx-auto">
+          <h1 className="text-center mb-10 lg:underline lg:text-3xl text-slate-50 text-3xl font-semibold  underline sm:text-3xl">
             My tools
           </h1>
           <Marquee
@@ -104,7 +99,7 @@ const page = () => {
           >
             {icons.map((icon, index) => (
               <div className="flex  px-5 lg:px-7 xl:px-12" key={index}>
-                <icon.icon className="w-12 h-12 sm:w-20 sm:h-20 lg:w-24 lg:h-24 text-slate-800  " />
+                <icon.icon className="w-16 h-16 drop-shadow-ll  sm:w-20 sm:h-20 lg:w-24 lg:h-24 text-slate-200  " />
               </div>
             ))}
           </Marquee>
@@ -130,4 +125,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default AboutMe;

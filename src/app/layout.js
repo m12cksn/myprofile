@@ -1,9 +1,9 @@
 import "./globals.css";
-import { Oswald } from "next/font/google";
+import { Quicksand } from "next/font/google";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-const oswald = Oswald({ subsets: ["latin"] });
+const quicksand = Quicksand({ subsets: ["latin"] });
 
 export const metadata = {
   title: "imSetiawan",
@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${oswald.className} bg-third`}>
+      <body className={`${quicksand.className} bg-third`}>
         <main className="">
           <Navbar />
           {children}
