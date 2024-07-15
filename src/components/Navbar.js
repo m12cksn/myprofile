@@ -90,7 +90,7 @@ const Navbar = () => {
               <div className=" ml-10 mt-8">
                 <Link
                   className="bg-sky-500 transition-all duration-300 ease-in-out hover:text-slate-100 hover:bg-sky-400 px-4 py-3 font-semibold  text-secondary inline-flex items-center gap-1 tracking-wider uppercase rounded shadow"
-                  href="#"
+                  href="/contact"
                 >
                   Contact{" "}
                   <span>
