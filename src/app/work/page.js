@@ -2,24 +2,32 @@ import React from "react";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
+import Whatsapp from "@/components/Whatsapp";
 
 const work = () => {
   const portfolios = [
     {
-      src: "/img/travelsite.png",
+      src: "/img/orderyuuks.png",
+      link: "https://vercel.com/m12cksn/dentist",
+      wa: "",
+    },
+    {
+      src: "/img/msw.png",
+      link: "https://www.mitrasolusiwicaksana.com/",
+      wa: "",
+    },
+    {
+      src: "/img/travel.png",
       link: "https://travelsite-five.vercel.app/",
       wa: "",
     },
+
     {
       src: "/img/rent.png",
       link: "https://rentcar-theta.vercel.app/",
       wa: "",
     },
-    {
-      src: "/img/dental.png",
-      link: "https://vercel.com/m12cksn/dentist",
-      wa: "",
-    },
+
     {
       src: "/img/eli.png",
       link: "https://www.elicrew.net/",
@@ -30,14 +38,9 @@ const work = () => {
       link: "https://smartofficevo.com/",
       wa: "",
     },
-    {
-      src: "/img/mitra.png",
-      link: "https://www.mitrasolusiwicaksana.com/",
-      wa: "",
-    },
   ];
   return (
-    <div className="p-5 md:pt-32 bg-textDark">
+    <div className=" md:pt-32 bg-textDark lg:h-screen ">
       <div className="2xl:max-w-7xl md:max-w-4xl lg:max-w-6xl shadow md:shadow-none  mx-auto md:px-5 md:rounded-lg z-40 w-full">
         <h1 className=" border-b-2 border-slate-800 text-slate-900 text-2xl pb-1">
           My Portfolio
@@ -61,23 +64,20 @@ const work = () => {
               </figure>
               <div className="card-body gap-2 p-3 flex">
                 <Link
-                  href="#"
+                  href={portfolio.link}
                   className="underline hover:text-third  text-slate-900 transition-all duration-500 ease-in-out "
                 >
                   Preview
-                </Link>
-                <Link
-                  href="#"
-                  className="underline hover:text-third  text-slate-900 transition-all duration-500 ease-in-out"
-                >
-                  Order
                 </Link>
               </div>
             </div>
           ))}
         </div>
       </div>
-      <Footer />
+      <div className="relative bottom-0 mt-11">
+        <Footer />
+        <Whatsapp />
+      </div>
     </div>
   );
 };
